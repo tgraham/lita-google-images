@@ -33,10 +33,8 @@ module Lita
           safe: config.safe_search,
           num: 8,
           start: rand(1..100),
-          imgSize: "medium",
           imgType: "photo",
-          searchType: "image",
-          fileType: "jpg"
+          searchType: "image"
         )
 
         data = MultiJson.load(http_response.body)
